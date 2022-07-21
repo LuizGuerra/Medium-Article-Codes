@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04968C072889C27D00D46C39 /* SquareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04968C062889C27D00D46C39 /* SquareViewController.swift */; };
+		04968C0A2889C28900D46C39 /* DShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04968C092889C28900D46C39 /* DShapeViewController.swift */; };
+		04968C0C2889C29400D46C39 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04968C0B2889C29400D46C39 /* BannerViewController.swift */; };
 		04D46E512888DFC5002A7940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D46E502888DFC5002A7940 /* AppDelegate.swift */; };
 		04D46E532888DFC5002A7940 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D46E522888DFC5002A7940 /* SceneDelegate.swift */; };
 		04D46E552888DFC5002A7940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D46E542888DFC5002A7940 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04968C062889C27D00D46C39 /* SquareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareViewController.swift; sourceTree = "<group>"; };
+		04968C092889C28900D46C39 /* DShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DShapeViewController.swift; sourceTree = "<group>"; };
+		04968C0B2889C29400D46C39 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		04D46E4D2888DFC5002A7940 /* UIKit CGPath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIKit CGPath.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D46E502888DFC5002A7940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D46E522888DFC5002A7940 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04968C052889C26000D46C39 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				04968C062889C27D00D46C39 /* SquareViewController.swift */,
+				04968C092889C28900D46C39 /* DShapeViewController.swift */,
+				04968C0B2889C29400D46C39 /* BannerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		04D46E442888DFC5002A7940 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +72,7 @@
 		04D46E4F2888DFC5002A7940 /* UIKit CGPath */ = {
 			isa = PBXGroup;
 			children = (
+				04968C052889C26000D46C39 /* ViewControllers */,
 				04D46E502888DFC5002A7940 /* AppDelegate.swift */,
 				04D46E522888DFC5002A7940 /* SceneDelegate.swift */,
 				04D46E542888DFC5002A7940 /* ViewController.swift */,
@@ -138,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04968C0C2889C29400D46C39 /* BannerViewController.swift in Sources */,
 				04D46E552888DFC5002A7940 /* ViewController.swift in Sources */,
+				04968C072889C27D00D46C39 /* SquareViewController.swift in Sources */,
+				04968C0A2889C28900D46C39 /* DShapeViewController.swift in Sources */,
 				04D46E512888DFC5002A7940 /* AppDelegate.swift in Sources */,
 				04D46E532888DFC5002A7940 /* SceneDelegate.swift in Sources */,
 			);
