@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="-843" y="252"/>
         </scene>
-        <!--Custom Shape-->
+        <!--Banner-->
         <scene sceneID="HTE-WK-dqd">
             <objects>
                 <viewController id="e2e-H6-L1N" customClass="BannerViewController" customModule="UIKit_UIBezierPath" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,7 +86,7 @@
                             <constraint firstItem="bFX-6t-LsS" firstAttribute="centerX" secondItem="Dmg-G9-hch" secondAttribute="centerX" id="a0S-Nm-gYS"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Custom Shape" image="pencil.circle.fill" catalog="system" id="ddS-nG-WEH"/>
+                    <tabBarItem key="tabBarItem" title="Banner" image="pencil.circle.fill" catalog="system" id="ddS-nG-WEH"/>
                     <connections>
                         <outlet property="label" destination="bFX-6t-LsS" id="brd-Vy-OyD"/>
                     </connections>
