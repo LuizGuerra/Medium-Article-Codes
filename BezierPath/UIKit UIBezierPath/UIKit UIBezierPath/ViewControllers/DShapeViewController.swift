@@ -50,7 +50,7 @@ class DShapeViewController: UIViewController {
         // Sets the filling and stroke color the path should be rendered with
         shapeLayer.fillColor = UIColor.white.cgColor
         shapeLayer.lineWidth = 5
-        shapeLayer.strokeColor = drawingColor
+        shapeLayer.strokeColor = UIColor.tintColor.cgColor
         
         // Adds to the view
         // And save it in an attribute so you can to update/delete it
