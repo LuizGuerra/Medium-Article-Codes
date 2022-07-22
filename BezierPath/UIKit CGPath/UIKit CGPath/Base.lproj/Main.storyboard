@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;D&quot; Shape View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-of-mN7">
-                                <rect key="frame" x="101" y="84" width="212" height="37"/>
+                                <rect key="frame" x="101.5" y="84" width="211.5" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -27,14 +27,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eEt-of-mN7" firstAttribute="top" secondItem="hyg-t9-Bjm" secondAttribute="top" constant="40" id="63N-5G-nwa"/>
-                            <constraint firstItem="eEt-of-mN7" firstAttribute="centerX" secondItem="hyg-t9-Bjm" secondAttribute="centerX" id="Op9-qD-wcO"/>
+                            <constraint firstItem="eEt-of-mN7" firstAttribute="centerX" secondItem="hyg-t9-Bjm" secondAttribute="centerX" id="GIo-sm-Hmq"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="D Shape" image="2.circle.fill" catalog="system" id="jdM-uE-idJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYd-dX-Lay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-214" y="518"/>
+            <point key="canvasLocation" x="-214.49275362318843" y="517.63392857142856"/>
         </scene>
         <!--Banner-->
         <scene sceneID="zDv-Ga-9aB">
@@ -59,6 +59,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Banner" image="pencil.circle.fill" catalog="system" id="Uwj-Jd-ZtL"/>
+                    <connections>
+                        <outlet property="bannerLabel" destination="jDo-ig-x1A" id="clp-hS-qvJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Me-NQ-SK5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

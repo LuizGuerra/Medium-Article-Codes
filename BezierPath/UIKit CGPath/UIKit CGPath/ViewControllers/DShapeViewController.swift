@@ -66,9 +66,5 @@ class DShapeView: UIView {
         // It is important to call in this order, otherwise your stroke might "disappear"
         context.strokePath()
         context.fillPath()
-        
-//        context.setFillColor(UIColor.tintColor.cgColor)
-        
-        context.fillPath()
     }
 }

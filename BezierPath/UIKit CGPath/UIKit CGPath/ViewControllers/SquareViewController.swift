@@ -19,7 +19,9 @@ class SquareViewController: UIViewController {
         super.viewDidLoad()
         
         // Sets up the square
-        let square = SquareView(frame: CGRect(origin: .zero, size: CGSize(width: 100, height: 100)))
+        let square = SquareView(frame: CGRect(
+            origin: .zero,
+            size: CGSize(width: 100, height: 100)))
         // The sttribute declaration is in another line
         //    so the weak reference doesn't get removed from memory
         self.view.addSubview(square)

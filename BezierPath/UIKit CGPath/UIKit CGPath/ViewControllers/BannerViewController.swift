@@ -7,12 +7,15 @@
 
 import UIKit
 
-class BannerViewController: UIViewController { }
+class BannerViewController: UIViewController {
+    @IBOutlet weak var bannerLabel: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        bannerLabel.textColor = UIColor.tintColor
+    }
+}
 
 class BannerView: UIView {
-    
-    var drawingColor: CGColor = #colorLiteral(red: 1, green: 0.4784313725, blue: 0, alpha: 1)
-    
     override func draw(_ rect: CGRect) {
         createTopLayer(rect)
         createBottomLayer(rect)
@@ -43,7 +46,7 @@ class BannerView: UIView {
         context.closePath()
         
         // Sets the filling color that the path should be rendered with
-        context.setFillColor(drawingColor)
+        context.setFillColor(UIColor.tintColor.cgColor)
         context.fillPath()
         
         // Relasing the context when finished
@@ -56,9 +59,9 @@ class BannerView: UIView {
         context.saveGState()
         
         // Creates a new empty path in a graphics context
-        context.beginPath()
         
         // Drawing stages
+        context.beginPath()
         context.move(to: .zero)
         context.move(to: CGPoint(x: 0, y: rect.height*0.6875))
         
@@ -74,13 +77,13 @@ class BannerView: UIView {
         
         context.addLine(to: CGPoint(x: 0, y: rect.height*0.6875))
         context.addLine(to: .zero)
+        context.closePath()
         
         // Finishes the path
         // This allows to draw more shapes in the same view
-        context.closePath()
         
         // Sets the filling color that the path should be rendered with
-        context.setFillColor(drawingColor)
+        context.setFillColor(UIColor.tintColor.cgColor)
         context.fillPath()
         
         // Relasing the context when finished
