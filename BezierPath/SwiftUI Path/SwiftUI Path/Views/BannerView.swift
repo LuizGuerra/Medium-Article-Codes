@@ -11,13 +11,11 @@ struct BannerView: View {
     var body: some View {
         ZStack {
             BannerShape()
-                .fill(.orange)
-                .navigationTitle(Text("Banner Shape View"))
-                .frame(width: .infinity, height: .infinity)
+                .fill(Color.accentColor)
                 .ignoresSafeArea()
             Text("Banner Shape")
                 .font(.largeTitle).bold()
-                .foregroundColor(Color.orange)
+                .foregroundColor(Color.accentColor)
         }
     }
 }

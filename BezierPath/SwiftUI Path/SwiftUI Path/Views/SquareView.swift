@@ -17,23 +17,12 @@ struct SquareView: View {
                 path.addLine(to: CGPoint(x: 0, y: 100))
                 path.addLine(to: .zero)
                 path.closeSubpath()
+                
             }
-            .fill(.orange)
-            .clipShape(Rectangle())
+            .fill(Color.accentColor)
             .padding(20)
             .navigationTitle(Text("Square View"))
         }
-    }
-    
-    var squarePath: some View {
-        Path { path in
-            path.move(to: .zero)
-            path.addLine(to: CGPoint(x: 100, y: 0))
-            path.addLine(to: CGPoint(x: 100, y: 100))
-            path.addLine(to: CGPoint(x: 0, y: 100))
-            path.addLine(to: .zero)
-        }
-        .fill(.orange)
     }
 }
 

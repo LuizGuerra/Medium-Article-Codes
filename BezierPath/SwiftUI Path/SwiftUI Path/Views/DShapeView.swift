@@ -11,10 +11,10 @@ struct DShapeView: View {
     var body: some View {
         NavigationView {
             DShape()
-                .stroke(.orange, lineWidth: 5)
-                .navigationTitle(Text("Banner Shape View"))
+                .stroke(Color.accentColor, lineWidth: 5)
                 .frame(width: 100, height: 100)
-                .offset(x: 25, y: -50)
+                .offset(x: 25, y: -25)
+                .navigationTitle(Text("Banner Shape View"))
         }
     }
 }
@@ -24,9 +24,9 @@ struct DShape: Shape {
         Path { path in
             path.move(to: .zero)
             path.addCurve(
-                to: CGPoint(x: 0, y: 100),
-                control1: CGPoint(x: 75, y: 0),
-                control2: CGPoint(x: 75, y: 100))
+                to: CGPoint(x: 0, y: rect.height),
+                control1: CGPoint(x: rect.width*0.75, y: 0),
+                control2: CGPoint(x: rect.width*0.75, y: rect.height))
             path.addLine(to: .zero)
             path.closeSubpath()
         }
