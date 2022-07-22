@@ -11,12 +11,11 @@ class BannerViewController: UIViewController {
     var topShapeLayer: CAShapeLayer?
     var botShapeLayer: CAShapeLayer?
     
-    var drawingColor: CGColor = #colorLiteral(red: 1, green: 0.4784313725, blue: 0, alpha: 1)
     @IBOutlet weak var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.textColor = UIColor(cgColor: drawingColor)
+        label.textColor = UIColor(cgColor: UIColor.tintColor.cgColor)
     }
     
     override func viewDidLayoutSubviews() {
@@ -32,8 +31,8 @@ class BannerViewController: UIViewController {
         let shapeLayer = CAShapeLayer()
         shapeLayer.frame = self.view.frame
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = drawingColor
-        shapeLayer.fillColor = drawingColor
+        shapeLayer.strokeColor = UIColor.tintColor.cgColor
+        shapeLayer.fillColor = UIColor.tintColor.cgColor
         shapeLayer.lineWidth = 5
         
         // Get the absolute value
@@ -64,8 +63,8 @@ class BannerViewController: UIViewController {
         let shapeLayer = CAShapeLayer()
         shapeLayer.frame = self.view.frame
         shapeLayer.fillColor = UIColor.clear.cgColor
-        shapeLayer.strokeColor = drawingColor
-        shapeLayer.fillColor = drawingColor
+        shapeLayer.strokeColor = UIColor.tintColor.cgColor
+        shapeLayer.fillColor = UIColor.tintColor.cgColor
         shapeLayer.lineWidth = 5
         
         // Get the absolute value

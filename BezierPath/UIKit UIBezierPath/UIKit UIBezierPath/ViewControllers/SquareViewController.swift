@@ -8,7 +8,6 @@
 import UIKit
 
 class SquareViewController: UIViewController {
-    var drawingColor: CGColor = #colorLiteral(red: 1, green: 0.4784313725, blue: 0, alpha: 1)
     var shape: CAShapeLayer?
     
     override func viewDidLayoutSubviews() {
@@ -29,6 +28,9 @@ class SquareViewController: UIViewController {
         let offsetedPosition = CGPoint(x: center.x - 50, y: center.y - 50)
         shapeLayer.position = offsetedPosition
         
+        // Sets the filling color the path should be rendered with
+        shapeLayer.fillColor = UIColor.tintColor.cgColor
+        
         // Start the bezier path object
         let bezierPath = UIBezierPath()
         
@@ -45,9 +47,6 @@ class SquareViewController: UIViewController {
         // Uses core graphics to save the path as a snapshot
         //      (as far as I understood)
         shapeLayer.path = bezierPath.cgPath
-        
-        // Sets the filling color the path should be rendered with
-        shapeLayer.fillColor = drawingColor
         
         // Adds to the view
         // And save it in an attribute so you can to update/delete it

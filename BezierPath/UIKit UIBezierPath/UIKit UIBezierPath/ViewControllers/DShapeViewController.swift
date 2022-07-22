@@ -8,7 +8,6 @@
 import UIKit
 
 class DShapeViewController: UIViewController {
-    var drawingColor: CGColor = #colorLiteral(red: 1, green: 0.4784313725, blue: 0, alpha: 1)
     var shape: CAShapeLayer?
     
     override func viewDidLayoutSubviews() {

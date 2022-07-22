@@ -83,7 +83,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bFX-6t-LsS" firstAttribute="centerY" secondItem="Dmg-G9-hch" secondAttribute="centerY" id="QNA-uL-6LY"/>
-                            <constraint firstItem="bFX-6t-LsS" firstAttribute="centerX" secondItem="Dmg-G9-hch" secondAttribute="centerX" id="a0S-Nm-gYS"/>
+                            <constraint firstItem="bFX-6t-LsS" firstAttribute="centerX" secondItem="phM-Ug-Q5J" secondAttribute="centerX" id="a0S-Nm-gYS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Banner" image="pencil.circle.fill" catalog="system" id="ddS-nG-WEH"/>
